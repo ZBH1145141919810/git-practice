@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息采集页</title>
+</head>
+<body>
+    <header>
+        <h1>问卷调查</h1>
+        <p>请填写以下信息</p>
+    </header>
+    <p>
+                <lable for="name">昵称</lable>
+                <input type="text"id="name"name="name" placeholder="请输入你的游戏昵称"required></input>
+            </p>
+        <p>
+                <lable for="email">邮箱</lable>
+                <input type="email"id="mail"name="mail" placeholder="请输入你的邮箱"required></input>
+            </p>
+        
+    <p>1.你认为本期的末日幻影难度如何?</p>
+        <p>
+                <lable><input type="radio"name="score" value="5" checked>非常难</lable>
+                <lable><input type="radio"name="score" value="4" checked>难</lable>
+                <lable><input type="radio"name="score" value="3" checked>一般</lable>
+                <lable><input type="radio"name="score" value="2" checked>容易</lable>
+                <lable><input type="radio"name="score" value="1" checked>非常容易</lable>
+            </p>
+    
+    <p>2.你希望下调下一期末日幻影的难度吗?</p>
+        <p>
+                <lable><input type="radio"name="topic" value="3">希望</lable>
+                <lable><input type="radio"name="topic" value="2">不希望</lable>
+                <lable><input type="radio"name="topic" value="1">无所谓</lable>
+            </p>
+    
+    <p>3.你认为游戏的活动奖励跟之前相比是否下降了?</p>
+    <p>
+                <lable><input type="radio"name="score" value="2" checked>是</lable>
+                <lable><input type="radio"name="score" value="1" checked>否</lable>
+            </p>
+     <p>
+                <lable for="advice">4.你对本期的末日幻影有什么建议吗？</lable><br>
+                <textarea id="advice" name="advice"rows="5" maxlength="200"placeholder="说了也不会改"></textarea>
+            </p>
+
+    <p>5.你觉得本期的末日幻影boss血量如何？</p>
+        <p>
+                <lable><input type="radio"name="topic" value="3">多</lable>
+                <lable><input type="radio"name="topic" value="2">一般</lable>
+                <lable><input type="radio"name="topic" value="1">不多</lable>
+            </p>
+    
+    <p>6.你觉得当前版本是否有角色需要加强？</p>
+        <p>
+                <lable><input type="radio"name="topic" value="2">需要</lable>
+                <lable><input type="radio"name="topic" value="1">不需要</lable>               
+            </p> 
+    
+    <p>7.如果需要加强,选出你认为需要加强的角色(可多选)</p>
+        <p>
+                <lable><input type="checkbox"name="topic" value="baie"><img src="白厄.jpg" alt="白厄" width="100" height="100">白厄</lable>
+                <lable><input type="checkbox"name="topic" value="xiadie"><img src="遐蝶.jpg" alt="遐蝶" width="100" height="100">遐蝶</lable>
+                <lable><input type="checkbox"name="topic" value="chart"><img src="银狼LV999.jpg" alt="银狼LV999" width="100" height="100">银狼LV999</lable>       
+                <lable><input type="checkbox"name="topic" value="chart"><img src="牢景.jpg" alt="牢景" width="100" height="100">景元</lable>
+            </p>  
+            
+        <p>
+                <lable for="advice">8.你对所选的角色有什么加强建议吗？</lable><br>
+                <textarea id="advice" name="advice"rows="5" maxlength="200"placeholder="说了也不加强"></textarea>
+            </p>
+
+    <p>9.你觉得这个版本牢景站起来了吗?</p>
+        <p>
+                <lable><input type="radio"name="topic" value="2">还没有</lable>
+                <lable><input type="radio"name="topic" value="1">牢景就没有坐下过</lable>               
+            </p> 
+    
+    <p>10.你觉得崩坏星穹铁道的策划是否有远见？</p>
+        <p>     
+                <label><input type="radio"name="topic" value="2">是</label>
+                <label><input type="radio"name="topic" value="1">该选项不存在</label>
+            </p>
+    <p>
+                <lable for="advice">11.你对游戏策划是否有建议，如果有，请写下你的建议</lable><br>
+                <textarea id="advice" name="advice"rows="5" maxlength="200"placeholder="请输入建议"></textarea>
+        
+            </p>
+
+            </body>
+</html>
