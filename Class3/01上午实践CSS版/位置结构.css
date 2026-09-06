@@ -26,3 +26,25 @@ body{
 
 .main-nav a {text-decoration: none;color: #0d6efd;}
 
+.card-grid{
+    max-width: 960;
+    margin: 0 auto;
+    padding: 16;
+    display: grid;   
+    grid-template-columns: repeat(auto-fit,minmax(260px,1 fr));
+    gap: 16;
+}
+
+.course-card{
+    border: 1px solid #dee2e6;
+    border-radius: 8;
+    padding: 16;
+}
+
+@media(min-width:992){
+    .course-card{padding: 24;}
+}
+
+
+
+
