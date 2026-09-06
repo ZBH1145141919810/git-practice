@@ -17,6 +17,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
+    position:relative
 }
 
 .main-nav{
