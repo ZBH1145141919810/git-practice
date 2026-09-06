@@ -24,3 +24,34 @@ a{
         color:rgb(164, 25, 192);
         font-size: 30px;
     }
+
+.card-1{
+    background-color: rgb(223, 220, 15);
+   
+}
+
+.card-2{
+    background-color: rgb(15, 220, 223);
+   
+}
+
+.card-3{
+    background-color: rgb(15, 223, 25);
+   
+}
+
+.card-4{
+    background-color: rgb(223, 15, 15);
+   
+}
+
+.card-5{
+    background-color: rgb(223, 15, 223);
+   
+}
+
+.card-6{
+    background-color: rgb(15, 15, 223);
+   
+}
+
