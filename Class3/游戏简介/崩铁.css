@@ -1,0 +1,26 @@
+.box-1{
+    height: 100px;
+    position: relative;
+    top: 150px;
+    right: 10px;
+
+}
+
+h4{
+    color:blueviolet;
+    display: flex;
+    justify-content: center;
+
+}
+
+a{
+    color:red;
+    display: flex;
+    justify-content: center;    
+
+}
+
+.navbar-brand{
+        color:rgb(164, 25, 192);
+        font-size: 30px;
+    }
