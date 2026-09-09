@@ -1,0 +1,56 @@
+.box-1{
+    height: 100px;
+    position: relative;
+    top: 150px;
+    right: 10px;
+
+}
+
+h4{
+    color:blueviolet;
+    display: flex;
+    justify-content: center;
+
+}
+
+a{
+    color:red;
+    display: flex;
+    justify-content: center;    
+
+}
+
+.navbar-brand{
+        color:rgb(24, 152, 191);
+        font-size: 30px;
+    }
+
+.card-1{
+    background-color: rgb(24, 152, 191);
+   
+}
+
+.card-2{
+    background-color: rgb(24, 152, 191);
+
+}
+
+.card-3{
+    background-color: rgb(24, 152, 191);
+   
+}
+
+.card-4{
+    background-color: rgb(24, 152, 191);
+   
+}
+
+.card-5{
+    background-color: rgb(24, 152, 191);
+   
+}
+
+.card-6{
+    background-color: rgb(24, 152, 191);
+   
+}
