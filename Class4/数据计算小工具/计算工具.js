@@ -30,3 +30,21 @@ const res = list.reduce((a,b)=>{
 const gpa = res.sumCr===0 ? 0 : (res.sumGp/res.sumCr).toFixed(2);
 console.log("加权绩点：",gpa);
 
+courseList.push({name:"测试课",score:"abc",credit:2});
+const valid2 = courseList.filter(item=>typeof item.score === "number" && item.score>=0 && item.score<=100);
+const list2 = valid2.map(c=>{
+    let g;
+    if(c.score>=90) g=4.0;
+    else if(c.score>=80) g=3.0;
+    else if(c.score>=70) g=2.0;
+    else if(c.score>=60) g=1.0;
+    else g=0;
+    return {gp:g*c.credit,cr:c.credit};
+});
+const res2 = list2.reduce((a,b)=>{
+    a.sumGp += b.gp;
+    a.sumCr += b.cr;
+    return a;
+},{sumGp:0,sumCr:0});
+const gpa2 = res2.sumCr===0 ? 0 : (res2.sumGp/res2.sumCr).toFixed(2);
+console.log("加入非法成绩后：",gpa2);
