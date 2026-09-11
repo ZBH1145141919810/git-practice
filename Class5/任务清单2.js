@@ -29,4 +29,8 @@ filters.addEventListener('click', (e) => {
   if (e.target.tagName !== 'BUTTON') return;
   currentFilter = e.target.dataset.filter; 
   render();
-});
+}); 
+
+let tasks = JSON.parse(localStorage.getItem('tasks',JSON) || '[]' );
+
+const save = () => localStorage.setItem('tasks',JSON.stringify(tasks));
