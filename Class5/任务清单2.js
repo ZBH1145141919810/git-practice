@@ -1,3 +1,8 @@
+const form = document.querySelector('#add-form');
+const input = document.querySelector('#task-input');
+const tip = document.querySelector('#tip');
+const list = document.querySelector('#task-list');
+
 const filters = document.querySelector('.filters');
 let currentFilter = 'all'; // all / active / done
 
