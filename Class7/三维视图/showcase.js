@@ -11,13 +11,11 @@ document.body.appendChild(renderer.domElement);
 
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-//灯光
 scene.add(new THREE.AmbientLight(0xffffff, 0.4));
 const dir = new THREE.DirectionalLight(0xffffff, 0.8);
 dir.position.set(3, 6, 4);
 scene.add(dir);
 
-//展台底座
 const stage = new THREE.Mesh(
   new THREE.CylinderGeometry(2, 2, 0.3, 48),
   new THREE.MeshStandardMaterial({ color: 0x37474f })
@@ -25,7 +23,6 @@ const stage = new THREE.Mesh(
 stage.position.y = -0.15;
 scene.add(stage);
 
-//展品组
 const items = new THREE.Group();
 const geos = [
   new THREE.BoxGeometry(0.8,0.8,0.8),
@@ -42,7 +39,6 @@ geos.forEach((geo, i) => {
 });
 scene.add(items);
 
-//动画
 function animate() {
   requestAnimationFrame(animate);
   controls.update();
@@ -51,7 +47,6 @@ function animate() {
 }
 animate();
 
-//窗口自适应
 window.addEventListener('resize', ()=>{
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
