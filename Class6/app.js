@@ -18,8 +18,6 @@ const renderBarChart = (data) => {
   });
 };
 
-let lineChart = null;
-let lineChart = null;
 
 const renderLineChart = (data) => {
   if (lineChart !== null) {

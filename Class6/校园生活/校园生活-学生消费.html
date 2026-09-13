@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园消费数据看板</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <style>
+        .container{width:90%;margin:20px auto;}
+        .row{display:flex;gap:30px;margin-top:20px;}
+        .chart-box{width:50%;height:400px;}
+        .tip{padding:20px;font-size:18px;text-align:center;}
+        .loading{color:#0000e3;}
+        .error{color:rgb(255, 0, 0);}
+        .empty{color:#585656;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>校园学生月度消费数据看板</h2>
+        <p>数据来源：模拟校园学生消费统计 | 单位：元</p>
+        <button id="showAll" class="btn">显示全部数据</button>
+        <button id="showHigh" class="btn">只显示高于1300的月份</button>
+
+        <div id="statusTip" class="tip loading">数据加载中，请稍候...</div>
+
+        <div class="row">
+            <div class="chart-box" id="barChart"></div>
+            <div class="chart-box">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
